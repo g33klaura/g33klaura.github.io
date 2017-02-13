@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 800px;
+  height: 100%;
+}
+
+header {
+  background-image: url("pdx.jpg");
+  padding: 5px;
+  font-size: 46px;
+  color: #4B92DB;
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  color: #4B92DB;
+  font-size: 36px;
+  padding-left: 20px;
+}
+
+.icon-title{
+  color: #4B92DB;
+  font-size: 36px;
+  display: flex;
+}
+
+
+
+h3 {
+  color: #666666;
+}
+
+a {
+  color: #00693C;
+  font-size: 26px;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  padding: ;
+  float: left;
+  border-bottom: ;
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  height: 25px;
+  padding: 12px 18px 8px 18px;
+  vertical-align: middle;
+}
+
+
+section {
+  width: 73%;
+  display: inline-block;
+  float: left;
+}
+
+aside {
+  width: 17%;
+  display: inline-block;
+  background-color:;
+  padding: 10px;
+  min-height: 100%;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+footer {
+  width: 790px;
+  background-color: #00693C;
+  color:;
+  clear: both;
+  display: block;
+}
