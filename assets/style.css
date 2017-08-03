@@ -13,7 +13,20 @@ h1 {
 .projects {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 28px;
+}
+
+.projects a {
+	text-decoration: none;
+}
+
+/* Not quite working */
+.projects a:active {
+	color: #B4F0FB;
+}
+
+.projects a:visited {
+	color: #D38C48;
 }
 
 .message {
