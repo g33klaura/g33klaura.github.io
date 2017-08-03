@@ -1,0 +1,11 @@
+body {
+	background-image: url("images/bkgd_congruent_pentagon.png");
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.projects {
+    font-family: 'Roboto Condensed', sans-serif;
+}
