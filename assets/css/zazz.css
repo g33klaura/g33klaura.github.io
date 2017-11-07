@@ -1,18 +1,37 @@
+html {
+	background: url("../images/marble_14.jpeg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-	/*background-image: url("../images/bkgd_congruent_pentagon.png");*/
-	background-image: url("../images/topography.png");
-	/*color: #11434C;*/
-	color: #139CB6;
+	/*background-image: url("../images/topography.png");*/
 	font-family: 'Lato', sans-serif;
+	color: #037F96;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+}
+
+/*Need to work on not being slammed at the top of the page*/
+#pic {
+	position: relative;
+	top: 5px;
 }
 
 h1 {
-	/*font-family: 'Bungee Shade', cursive;*/
 	font-family: 'Permanent Marker', cursive;
-	/*color: Black;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 h4 {
 	font-weight: 700;
-	color: #037F96;
+	color: #139CB6;
 }
