@@ -1,5 +1,17 @@
 body {
-	background-image: url("../images/bkgd_congruent_pentagon.png");
-	/*background-image: url("../images/bkgd_wormz.png");*/
+	/*background-image: url("../images/bkgd_congruent_pentagon.png");*/
+	background-image: url("../images/topography.png");
 	/*color: #11434C;*/
+	color: #139CB6;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-family: 'Bungee Shade', cursive;
+	/*color: Black;*/
+}
+
+h4 {
+	font-weight: 700;
+	color: #037F96;
 }
