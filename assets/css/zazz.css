@@ -7,7 +7,6 @@ html {
 }
 
 body {
-	/*background-image: url("../images/topography.png");*/
 	font-family: 'Lato', sans-serif;
 	color: Black;
 }
@@ -35,6 +34,7 @@ h4 {
 	font-weight: 700;
 	color: #037F96;
 }
+
 
 /*
 lighter teal | color: #139CB6;
