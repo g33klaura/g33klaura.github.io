@@ -1,5 +1,5 @@
 html {
-	background: url("../images/marble_14.jpeg") no-repeat center center fixed;
+	background: url("../images/marble_14_2000px.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,29 +9,34 @@ html {
 body {
 	/*background-image: url("../images/topography.png");*/
 	font-family: 'Lato', sans-serif;
-	color: #037F96;
+	color: Black;
 }
 
-.header {
+/*.header {
 	position: relative;
 	width: 100%;
-}
+}*/
 
 /*Need to work on not being slammed at the top of the page*/
-#pic {
+/*#pic {
 	position: relative;
 	top: 5px;
-}
+}*/
 
 h1 {
 	font-family: 'Permanent Marker', cursive;
-	position: absolute;
+	/*position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100%;*/
 }
 
 h4 {
 	font-weight: 700;
-	color: #139CB6;
+	color: #037F96;
 }
+
+/*
+lighter teal | color: #139CB6;
+darker teal | color: #037F96;
+*/
