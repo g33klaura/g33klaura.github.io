@@ -1,24 +1,21 @@
 <h1 align="center">Portfolio of Laura Boetcher</h1>
 
-## Web Applications
+<!-- ## Web Applications
 <!-- make TOC here? -->
 
-In order of recently updated
+<!-- In order of recently updated
 
 ### ClickyTime
 
 * Repo <>
 * Deployed <>
 
-### TITLE
-
-* Repo <>
-* Deployed <>
+### word-gen3000 (in progress)
 
 ### GiphyGrabber
 
 * Repo <https://github.com/g33klaura/GiphyGrabber>
-* Deployed <https://g33klaura.github.io/GiphyGrabber/>
+* Deployed <https://g33klaura.github.io/GiphyGrabber/> -->
 
 #### Connect With Me
 
