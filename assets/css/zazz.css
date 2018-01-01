@@ -1,8 +1,10 @@
 html {
-	background: url("../images/marble_14_2000px.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+	/* background: url("../images/marble_14_2000px.jpg") no-repeat center center fixed; */
+	/* background: url("../images/bkgd_marbleteals.jpg") no-repeat center center fixed; */
+	background: url("../images/bkgd_marblepurples.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
   background-size: cover;
 }
 
