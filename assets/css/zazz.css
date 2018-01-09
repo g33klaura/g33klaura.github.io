@@ -11,6 +11,13 @@ html {
 body {
 	font-family: 'Lato', sans-serif;
 	color: Black;
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 /*.header {
@@ -34,7 +41,7 @@ h1 {
 
 h4 {
 	font-weight: 700;
-	color: #037F96;
+	color: #4451F2;
 }
 
 #sq1 h2 {
@@ -44,16 +51,18 @@ h4 {
 }
 
 #sq1 {
-	background-color: #3C98D9;
+	background-color: #4451F2;
 	width: 200px;
 	height: 200px;
 }
 
 #sq1:hover {
-	background-color: #A185F6;
+	background-color: #3C98D9;
 }
 
 /*
 lighter teal | color: #139CB6;
 darker teal | color: #037F96;
+lighter sky blue | color: #59BAF6;
+lilac | #A185F6;
 */
