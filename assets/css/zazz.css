@@ -42,6 +42,10 @@ h4 {
 	color: #4451F2;
 }
 
+/* .second-row {
+	margin-top: 3em;
+} */
+
 .thumbnail h2 {
 	color: white;
   text-transform: uppercase;
@@ -53,6 +57,7 @@ h4 {
 	width: 200px;
 	height: 200px;
 	display: block;
+	margin-top: 3em;
 }
 
 .thumbnail:hover {
