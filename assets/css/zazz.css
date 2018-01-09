@@ -37,15 +37,20 @@ h4 {
 	color: #037F96;
 }
 
-.thumbnail h2 {
+#sq1 h2 {
 	color: white;
   text-transform: uppercase;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 2rem;
-  transform: translate(-50%, -50%);
+  font-size: 90%;
+}
+
+#sq1 {
+	background-color: #3C98D9;
+	width: 200px;
+	height: 200px;
+}
+
+#sq1:hover {
+	background-color: #A185F6;
 }
 
 /*
