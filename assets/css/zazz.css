@@ -1,6 +1,4 @@
 html {
-	/* background: url("../images/marble_14_2000px.jpg") no-repeat center center fixed; */
-	/* background: url("../images/bkgd_marbleteals.jpg") no-repeat center center fixed; */
 	background: url("../images/bkgd_marblepurples.jpg") no-repeat center center fixed;
 		-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -44,23 +42,29 @@ h4 {
 	color: #4451F2;
 }
 
-#sq1 h2 {
+.thumbnail h2 {
 	color: white;
   text-transform: uppercase;
   font-size: 90%;
 }
 
-#sq1 {
+.thumbnail {
 	background-color: #4451F2;
 	width: 200px;
 	height: 200px;
+	display: block;
 }
 
-#sq1:hover {
-	background-color: #3C98D9;
+.thumbnail:hover {
+	background-color: #A185F6;
+}
+
+.page-footer {
+	background-color: #59BAF6;
 }
 
 /*
+Exploring Color
 lighter teal | color: #139CB6;
 darker teal | color: #037F96;
 lighter sky blue | color: #59BAF6;
