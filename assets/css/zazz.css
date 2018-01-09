@@ -24,13 +24,17 @@ main {
 }*/
 
 /*Need to work on not being slammed at the top of the page*/
-/*#pic {
+#pic {
 	position: relative;
+	margin-top: 3em;
 	top: 5px;
-}*/
+	width: 100px;
+	height: 100px;
+}
 
 h1 {
 	font-family: 'Permanent Marker', cursive;
+	margin-top: 0px;
 	/*position: absolute;
 	top: 0;
 	left: 0;
@@ -40,6 +44,11 @@ h1 {
 h4 {
 	font-weight: 700;
 	color: #4451F2;
+}
+
+#projects-grid {
+	position: relative;
+	bottom: 20px;
 }
 
 /* .second-row {
