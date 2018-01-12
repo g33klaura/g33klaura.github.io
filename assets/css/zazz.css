@@ -26,8 +26,8 @@ main {
 /*Need to work on not being slammed at the top of the page*/
 #pic {
 	position: relative;
-	margin-top: 3em;
-	top: 5px;
+	margin-top: 2em;
+	/* top: 5px; */
 	width: 100px;
 	height: 100px;
 }
@@ -44,6 +44,18 @@ h1 {
 h4 {
 	font-weight: 700;
 	color: #4451F2;
+}
+
+.tab a {
+	color: rgb(222, 14, 222) !important;
+}
+
+.tab a:hover {
+	color: rgb(177, 222, 14) !important;
+}
+
+.tabs .indicator {
+	background-color: rgb(177, 222, 14) !important;
 }
 
 #projects-grid {
