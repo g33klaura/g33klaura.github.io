@@ -57,6 +57,11 @@ h4 {
 
 /* Tabbed Sections */
 
+.tabs-fixed-width {
+	/* Fixes weird scrollbar on last tab item */
+	overflow-x: hidden;
+}
+
 .tab a {
 	/* color: rgb(222, 14, 222) !important; */
 	color: #4451F2 !important;
