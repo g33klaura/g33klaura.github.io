@@ -1,3 +1,11 @@
+/*
+Exploring Color
+lighter teal | color: #139CB6;
+darker teal | color: #037F96;
+lighter sky blue | color: #59BAF6;
+lilac | #A185F6;
+*/
+
 html {
 	background: url("../images/bkgd_marblepurples.jpg") no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -46,7 +54,9 @@ h4 {
 	font-size: 2rem;
 }
 
+
 /* Tabbed Sections */
+
 .tab a {
 	/* color: rgb(222, 14, 222) !important; */
 	color: #4451F2 !important;
@@ -60,24 +70,29 @@ h4 {
 	background-color: rgb(222, 14, 222) !important;
 }
 
-#tab-section {
+/* #tab-section {
 	background-color: rgba(161, 133, 246, 0.4)
-}
+} */
 
 .tab-heading {
+	margin-top: 0;
 	margin-bottom: 0.9rem;
-	text-transform: uppercase;
+	padding: 20px 0 8px 0;
+	/* text-transform: uppercase; */
+	font-size: 20px;
+	background-color: rgba(255,255,255,.6);
 }
+
 
 /* Portfolio Squares */
 
-.projects-grid {
+/* .projects-grid {
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-content: center;
 	align-items: center;
-	align-items: center;
-}
+} */
 
 .second-row {
 	margin-top: 1em;
@@ -87,9 +102,9 @@ h4 {
 	background-color: #4451F2;
 	width: 200px;
 	height: 200px;
-	/* display: block; */
-	/* margin-top: 3em; */
-	/* flex-grow: 1; */
+	display: inline-flex;
+  align-items: center;
+	justify-content: center;
 }
 
 .thumbnail:hover {
@@ -99,17 +114,13 @@ h4 {
 .thumbnail h2 {
 	color: white;
   text-transform: uppercase;
-  font-size: 90%;
+	font-size: 90%;
+	flex: 1,
 }
+
+
+/* Footer */
 
 .page-footer {
 	background-color: #59BAF6;
 }
-
-/*
-Exploring Color
-lighter teal | color: #139CB6;
-darker teal | color: #037F96;
-lighter sky blue | color: #59BAF6;
-lilac | #A185F6;
-*/
