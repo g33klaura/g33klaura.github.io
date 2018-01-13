@@ -1,7 +1,8 @@
 <h1 align="center">Portfolio of Laura Boetcher</h1>
 
-<!-- ## Web Applications
-<!-- make TOC here? -->
+## Deployed Link
+
+[GitHub Pages] <https://g33klaura.github.io>
 
 <!-- In order of recently updated
 
@@ -17,7 +18,7 @@
 * Repo <https://github.com/g33klaura/GiphyGrabber>
 * Deployed <https://g33klaura.github.io/GiphyGrabber/> -->
 
-#### Connect With Me
+### Connect With Me
 
 [LinkedIn Profile] <https://www.linkedin.com/in/laura-boetcher>
 
