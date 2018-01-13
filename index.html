@@ -26,12 +26,12 @@
 			</div>
 
 			<!-- Trying out tabs -->	
-			<div class="row">
+			<div class="row" id="tab-section">
 				<div class="col s12">
 					<ul class="tabs">
 						<li class="tab col s3"><a href="#about">About Me</a></li>
-						<li class="tab col s3"><a class="active" href="#resume">Resume</a></li>
-						<li class="tab col s3"><a href="#portfolio">Portfolio</a></li>
+						<li class="tab col s3"><a href="#resume">Resume</a></li>
+						<li class="tab col s3"><a href="#portfolio" class="active">Portfolio</a></li>
 						<li class="tab col s3"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -41,154 +41,136 @@
 
 				<div id="resume" class="col s12">Resume/CV</div>
 
-				<div id="portfolio" class="col s12">Portfolio
-						<section class="row">
-								<div class="col s12 center-align">
-				
-									<h5>Deployed Applications</h5>
-				
-										<div class="row" id="projects-grid">
-											<!-- portfolio grid, 8 squares total -->
-				
-											<!-- Square 1 -->
-											<div class="col s6 m3 valign-wrapper">
-												<a href="https://g33klaura.github.io/GiphyGrabber/" target="_blank">
-													
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq1">
-													<!-- Should change this to p tags; silly to shrink <h2> -->
-														<h2 class="center-align">GiphyGrabber</h2>
-													</div>
-				
-												</a>
-											</div>
-											
-											<!-- Square 2 -->
-											<div class="col s6 m3 valign-wrapper">
-												<a href="https://g33klaura.github.io/clickytime/" target="_blank">
-														
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq2">
-														<h2 class="center-align">ClickyTime</h2>
-													</div>
-					
-												</a>
-											</div>
-											
-											<!-- Square 3 -->
-											<div class="col s6 m3 valign-wrapper">
-												<a href="https://morning-shelf-62146.herokuapp.com/" target="_blank">
-														
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq3">
-														<h2 class="center-align">Friend Finder</h2>
-													</div>
-					
-												</a>
-											</div>
-				
-											<!-- Square 4 -->
-											<div class="col s6 m3 valign-wrapper">
-												<a href="https://fast-eyrie-14169.herokuapp.com/" target="_blank">
-														
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq4">
-														<h2 class="center-align">UFO Catcher</h2>
-													</div>
-					
-												</a>
-											</div>
-				
-											<!-- Square 5 -->
-											<div class="col s6 m3 valign-wrapper second-row">
-												<a href="https://limitless-temple-77629.herokuapp.com/" target="_blank">
-															
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq5">
-														<h2 class="center-align">Eat-Da-Burger</h2>
-													</div>
-						
-												</a>
-											</div>
-				
-											<!-- Square 6 -->
-											<div class="col s6 m3 valign-wrapper second-row">
-												<a href="https://pure-stream-21176.herokuapp.com/" target="_blank">
-															
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq6">
-														<h2 class="center-align">NewsNow</h2>
-													</div>
-						
-												</a>
-											</div>
-				
-											<!-- Square 7 -->
-											<div class="col s6 m3 valign-wrapper second-row">
-												<a href="https://g33klaura.github.io/TriviaGame/" target="_blank">
-																
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq7">
-														<h2 class="center-align">Sci-fi Trivia</h2>
-													</div>
-							
-												</a>
-											</div>
-				
-											<!-- Square 8 -->
-											<div class="col s6 m3 valign-wrapper second-row">
-												<a href="https://g33klaura.github.io/Psychic-Game/" target="_blank">
-																
-													<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq8">
-														<h2 class="center-align">Psychic Game</h2>
-													</div>
-							
-												</a>
-											</div>
-				
+				<section id="portfolio" class="col s12">
+					<div class="row">
+						<div class="col s12 center-align">
+
+							<h5>Deployed Applications</h5>
+
+							<div class="row" id="projects-grid">
+
+								<!-- Square 1 -->
+								<div class="col s6 m3 valign-wrapper">
+									<a href="https://g33klaura.github.io/GiphyGrabber/" target="_blank">
+
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq1">
+											<!-- Should change this to p tags; silly to shrink <h2> -->
+											<h2 class="center-align">GiphyGrabber</h2>
 										</div>
-										<!-- ^^Closes #projects-grid -->
+
+									</a>
+								</div>
+
+								<!-- Square 2 -->
+								<div class="col s6 m3 valign-wrapper">
+									<a href="https://g33klaura.github.io/clickytime/" target="_blank">				
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq2">
+											<h2 class="center-align">ClickyTime</h2>
+										</div>
+									</a>
+								</div>
+	
+								<!-- Square 3 -->
+								<div class="col s6 m3 valign-wrapper">
+									<a href="https://morning-shelf-62146.herokuapp.com/" target="_blank">
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq3">
+											<h2 class="center-align">Friend Finder</h2>
+										</div>
+									</a>
+								</div>
+
+								<!-- Square 4 -->
+								<div class="col s6 m3 valign-wrapper">
+									<a href="https://fast-eyrie-14169.herokuapp.com/" target="_blank">
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq4">
+											<h2 class="center-align">UFO Catcher</h2>
+										</div>
+									</a>
+								</div>
+
+								<!-- Square 5 -->
+								<div class="col s6 m3 valign-wrapper second-row">
+									<a href="https://limitless-temple-77629.herokuapp.com/" target="_blank">
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq5">
+											<h2 class="center-align">Eat-Da-Burger</h2>
+										</div>
+									</a>
+								</div>
+
+								<!-- Square 6 -->
+								<div class="col s6 m3 valign-wrapper second-row">
+									<a href="https://pure-stream-21176.herokuapp.com/" target="_blank">
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq6">
+											<h2 class="center-align">NewsNow</h2>
+										</div>
+									</a>
+								</div>
+
+								<!-- Square 7 -->
+								<div class="col s6 m3 valign-wrapper second-row">
+									<a href="https://g33klaura.github.io/TriviaGame/" target="_blank">
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq7">
+											<h2 class="center-align">Sci-fi Trivia</h2>
+										</div>
+									</a>
+								</div>
+
+								<!-- Square 8 -->
+								<div class="col s6 m3 valign-wrapper second-row">
+									<a href="https://g33klaura.github.io/Psychic-Game/" target="_blank">
+										<div class="thumbnail z-depth-4 waves-effect waves-purple" id="sq8">
+											<h2 class="center-align">Psychic Game</h2>
+										</div>
+									</a>
+								</div>
+
+							</div>
+							<!-- ^^Closes #projects-grid -->
 				
 				
 									
-								</div>
-							</section>
-				</div>
+						</div>
+					</div>
+				</section>
 				<!-- ^^Closes portfolio div -->
 
 				<div id="contact" class="col s12">Contact/Connect</div>
 
 			</div>
+			<!-- ^^Closes tab row -->
 
-			
 		</main>
     <!-- ^^Closes overall container div -->
 
-			<!-- <div class="row"> -->
-				<!-- <div class="col s12"> -->
-					<!-- footer -->
-					<footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Key Skills</h5>
-                <p class="grey-text text-lighten-4">HTML, CSS, JavaScript, jQuery, Materialize CSS, React, Node, Express, SQL, NoSQL, Creative Suite, and a hunger to learn all the things!</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Connect With Me</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://github.com/g33klaura">GitHub</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/laura-boetcher">LinkedIn</a></li>
-                  <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
 
-            <div class="container">
-            © 2017 Laura Boetcher
-            <!-- <a class="grey-text text-lighten-4 right">Thanks for visiting!</a> -->
-						</div>
-						
+		<footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Key Skills</h5>
+            <p class="grey-text text-lighten-4">HTML, CSS, JavaScript, jQuery, Materialize CSS, React, Node, Express, SQL, NoSQL, Creative Suite, and a hunger to learn all the things!</p>
           </div>
-        </footer>
-				<!-- </div> -->
-			<!-- </div> -->
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Connect With Me</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/g33klaura">GitHub</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/laura-boetcher">LinkedIn</a></li>
+              <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+
+        <div class="container">
+        © 2017 Laura Boetcher
+        <!-- <a class="grey-text text-lighten-4 right">Thanks for visiting!</a> -->
+				</div>
+
+      </div>
+    </footer>
+
 
 
 
