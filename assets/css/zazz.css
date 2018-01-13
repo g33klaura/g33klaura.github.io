@@ -42,25 +42,32 @@ h1 {
 }
 
 h4 {
+	font-family: 'Permanent Marker', cursive;
 	font-weight: 700;
 	color: #4451F2;
+	font-size: 2rem;
 }
 
 .tab a {
-	color: rgb(222, 14, 222) !important;
+	/* color: rgb(222, 14, 222) !important; */
+	color: #4451F2 !important;
 }
 
 .tab a:hover {
-	color: rgb(177, 222, 14) !important;
+	color: rgb(222, 14, 222) !important;
 }
 
 .tabs .indicator {
-	background-color: rgb(177, 222, 14) !important;
+	background-color: rgb(222, 14, 222) !important;
+}
+
+#tab-section {
+	background-color: rgba(161, 133, 246, 0.4)
 }
 
 #projects-grid {
 	position: relative;
-	bottom: 20px;
+	/* bottom: 20px; */
 }
 
 /* .second-row {
