@@ -1,5 +1,5 @@
+/*      Color vars      */
 :root {
-	/* Color vars */
 	--dark-jungle: 			#212e31;
 	--lacroix-orchid: 	#E7D6E9;
 	--vaporwave-violet: #B243E1;
@@ -24,7 +24,7 @@ main {
 	padding: 6rem;
 }
 
-/* Streamline svgs */
+/*      Streamline svgs      */
 .contact-icons {
 	display: flex;
 	justify-content: flex-end;
@@ -36,28 +36,47 @@ main {
 	stroke: var(--dark);
 }
 
-.contact-icons svg:hover {
-	stroke: var(--highlight);
+.contact-icons svg:hover { stroke: var(--highlight); }
+
+.resume:hover {
+	background-color: aqua;
 }
 
-/* Type */
+/*      Type      */
 h1,
 h2 { font-weight: 400; }
 h1 > span,
-h2 > span { font-weight: 600; }
+h2 > span { font-weight: 700; }
+
+h1 > span:hover,
+h2 > span:hover { color: var(--highlight); }
+
+h1 { font-size: 4rem; }
+
+h2 {
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+p {
+	font-size: 1.4rem;
+	margin-right: 6rem;
+}
+
+p span { font-weight: 500; }
+
+p span:hover { color: var(--highlight); }
+
+.fa-asterisk { font-size: 90%; }
 
 footer {
 	background-color: var(--dark);
 	color: var(--light);
 	padding: 6rem;
 	padding-top: 1rem;
-	height: 30vh;
+	height: 20vh;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
-}
-
-p span:hover {
-	color: var(--highlight);
 }
