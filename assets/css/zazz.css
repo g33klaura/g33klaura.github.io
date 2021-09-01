@@ -3,10 +3,12 @@
 	--dark-jungle: 			#212e31;
 	--lacroix-orchid: 	#E7D6E9;
 	--vaporwave-violet: #B243E1;
+	--pumpkin-patch: 		#DE623A;
 
-	--dark: var(--dark-jungle);
-	--light: var(--lacroix-orchid);
-	--highlight: var(--vaporwave-violet);
+	--dark: 			var(--dark-jungle);
+	--light: 			var(--lacroix-orchid);
+	--highlight: 	var(--vaporwave-violet);
+	--pop: 				var(--pumpkin-patch);
 }
 
 html { background-color: var(--light); }
@@ -24,23 +26,38 @@ main {
 	padding: 6rem;
 }
 
-/*      Streamline svgs      */
-.contact-icons {
+.contact {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.contact-icons svg {
+/* Streamline svgs */
+/* .contact svg {
 	margin: 1rem;
 	stroke: var(--dark);
+} */
+
+/* .contact svg:hover { stroke: var(--highlight); } */
+
+button {
+	background-color: transparent;
+	/* border: 2px solid var(--dark); */
+	border: none;
+	/* border-radius: 8px; */
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 12px 16px;
+	cursor: pointer;
 }
 
-.contact-icons svg:hover { stroke: var(--highlight); }
-
-.resume:hover {
-	background-color: aqua;
+button:hover {
+	background-color: var(--dark);
+	color: var(--light);
 }
+
+button + button { margin-left: 12px; }
 
 /*      Type      */
 h1,
@@ -50,6 +67,35 @@ h2 > span { font-weight: 700; }
 
 h1 > span:hover,
 h2 > span:hover { color: var(--highlight); }
+
+sup:hover {
+	color: var(--pop);
+	animation: fa-spin 2s infinite linear;
+}
+
+@-webkit-keyframes fa-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg)
+	}
+}
+
+@keyframes fa-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg)
+	}
+}
 
 h1 { font-size: 4rem; }
 
