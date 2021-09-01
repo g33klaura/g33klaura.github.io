@@ -26,40 +26,6 @@ main {
 	padding: 6rem;
 }
 
-.contact {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-/* Streamline svgs */
-/* .contact svg {
-	margin: 1rem;
-	stroke: var(--dark);
-} */
-
-/* .contact svg:hover { stroke: var(--highlight); } */
-
-button {
-	background-color: transparent;
-	/* border: 2px solid var(--dark); */
-	border: none;
-	/* border-radius: 8px; */
-	font-family: inherit;
-	font-weight: 400;
-	font-size: 1rem;
-	padding: 12px 16px;
-	cursor: pointer;
-}
-
-button:hover {
-	text-decoration: underline var(--dark);
-	text-underline-offset: 0.6em;
-	text-decoration-thickness: 0.5em;
-}
-
-button + button { margin-left: 12px; }
-
 /*      Type      */
 h1,
 h2 { font-weight: 400; }
@@ -83,9 +49,34 @@ p {
 }
 
 p span { font-weight: 500; }
+p span:hover { color: var(--pop); }
 
-p span:hover { color: var(--highlight); }
+/*      CTAs      */
+.contact {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
 
+a {
+	text-decoration: none;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 1rem;
+	color: var(--dark);
+	padding: 12px 16px;
+}
+
+a:hover {
+	text-decoration: underline var(--dark) 0.5em;
+	text-underline-offset: 0.6em;
+}
+
+a+a {
+	margin-left: 12px;
+}
+
+/*      Flair      */
 footer {
 	background-color: var(--dark);
 	color: var(--light);
@@ -98,7 +89,11 @@ footer {
 	left: 0;
 }
 
-/*      Flair      */
+.nerd:hover {
+	text-decoration: underline var(--pop) wavy 2px;
+	text-underline-offset: 0.6em;
+}
+
 .fa-asterisk { font-size: 90%; }
 
 sup:hover {
