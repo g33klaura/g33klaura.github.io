@@ -1,106 +1,10 @@
-/*      Color vars      */
-:root {
-	--dark-jungle: 			#212E31;
-	--lacroix-orchid: 	#E7D6E9;
-	--vaporwave-violet: #B243E1;
-	--purple-pop: 			#612AF4;
-	--toxic-green: 			#BAFF00;
-	--vamp-red:					#E52900;
-
-	--dark: 			var(--dark-jungle);
-	--light: 			var(--lacroix-orchid);
-	--highlight: 	var(--vaporwave-violet);
-	--pop: 				var(--purple-pop);
-	--pizzazz: 		var(--toxic-green);
-}
-
-/*      Fonts by atipo      */
-@font-face {
-	font-family: 'geomanist';
-	src: url('../fonts/geomanist-light-webfont.eot');
-	src: url('../fonts/geomanist-light-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/geomanist-light-webfont.woff2') format('woff2'),
-		url('../fonts/geomanist-light-webfont.woff') format('woff'),
-		url('../fonts/geomanist-light-webfont.ttf') format('truetype'),
-		url('../fonts/geomanist-light-webfont.svg#geomanistregular') format('svg');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'geomanist';
-	src: url('../fonts/geomanist-regular-webfont.eot');
-	src: url('../fonts/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/geomanist-regular-webfont.woff2') format('woff2'),
-		url('../fonts/geomanist-regular-webfont.woff') format('woff'),
-		url('../fonts/geomanist-regular-webfont.ttf') format('truetype'),
-		url('../fonts/geomanist-regular-webfont.svg#geomanistregular') format('svg');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'geomanist';
-	src: url('../fonts/geomanist-medium-webfont.eot');
-	src: url('../fonts/geomanist-medium-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/geomanist-medium-webfont.woff2') format('woff2'),
-		url('../fonts/geomanist-medium-webfont.woff') format('woff'),
-		url('../fonts/geomanist-medium-webfont.ttf') format('truetype'),
-		url('../fonts/geomanist-medium-webfont.svg#geomanistregular') format('svg');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'geomanist';
-	src: url('../fonts/geomanist-bold-webfont.eot');
-	src: url('../fonts/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/geomanist-bold-webfont.woff2') format('woff2'),
-		url('../fonts/geomanist-bold-webfont.woff') format('woff'),
-		url('../fonts/geomanist-bold-webfont.ttf') format('truetype'),
-		url('../fonts/geomanist-bold-webfont.svg#geomanistregular') format('svg');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'knile';
-	src: url('../fonts/knile-bold-webfont.eot');
-	src: url('../fonts/knile-bold-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/knile-bold-webfont.woff2') format('woff2'),
-	url('../fonts/knile-bold-webfont.woff') format('woff'),
-	url('../fonts/knile-bold-webfont.ttf') format('truetype'),
-	url('../fonts/knile-bold-webfont.svg#knilebold') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'bariol serif';
-	src: url('../fonts/bariol_serif_bold-webfont.eot');
-	src: url('../fonts/bariol_serif_bold-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/bariol_serif_bold-webfont.woff2') format('woff2'),
-		url('../fonts/bariol_serif_bold-webfont.woff') format('woff'),
-		url('../fonts/bariol_serif_bold-webfont.ttf') format('truetype'),
-		url('../fonts/bariol_serif_bold-webfont.svg#bariol_serifbold') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
 html { background-color: var(--light); }
 
 body {
 	font-family: 'geomanist', sans-serif;
 	color: var(--dark);
 	margin: 0;
-	cursor: url('../images/streamline-icon-interface-geometric-circle@24x24.svg'), auto;
-}
-
-main {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding: 6rem;
+	cursor: url('../images/streamline-icon-interface-geometric-circle@26x26.svg'), auto;
 }
 
 /*      Type      */
@@ -110,11 +14,7 @@ h2 { font-weight: 300; }
 h1 > span { font-weight: 600; }
 h2 > span { font-weight: 500; }
 
-h1 > span:hover {
-	color: var(--pop);
-	/* font-family: 'bariol serif', serif;
-	font-weight: bold; */
-}
+h1 > span:hover { color: var(--pop); }
 
 h2 > span:hover { color: var(--highlight); }
 
@@ -148,7 +48,7 @@ a {
 	font-size: 1rem;
 	padding: 12px 16px;
 	color: var(--dark);
-	cursor: url('../images/streamline-icon-interface-geometric-triangle@24x24.svg'), auto;
+	cursor: url('../images/streamline-icon-interface-geometric-triangle@26x26.svg'), auto;
 }
 
 a:hover {
@@ -162,17 +62,16 @@ a:hover {
 
 a+a { margin-left: 12px; }
 
-h2 > a.talk {
+a.talk {
 	font-size: 2rem;
 	font-weight: 500;
 	line-height: 3rem;
 	text-decoration: none;
 	padding: 0;
+	cursor: url('../images/streamline-icon-mail-send-email@26x26.svg');
 }
 
-h2 > a.talk:hover {
-	color: var(--vaporwave-violet);
-}
+a.talk:hover { color: var(--vaporwave-violet); }
 
 /*      Flair      */
 footer {
@@ -194,7 +93,7 @@ p span:hover {
 	text-underline-offset: 0.6em;
 }
 
-h1 > span { cursor: url('../images/waving_hand_emoji@20x20.png'), auto; }
+h1 > span { cursor: url('../images/waving_hand_emoji@42x42.png'), auto; }
 
 h1 > span:hover { position: relative; }
 
@@ -203,19 +102,19 @@ h1 > span:hover:after {
 	content: url(../images/its-me-bw@200x200.jpeg);
 	display: block;
 	position: absolute;
-	left: 426px;
-	top: -140px;
+	left: 450px;
+	top: -60px;
 	clip-path: circle(91px at 50% 42%);
 }
 
-.nerd { cursor: url('../images/nerd_face_emoji@20x20.png'), auto; }
+.nerd { cursor: url('../images/nerd_face_emoji@42x42.png'), auto; }
 
-.adventure { cursor: url('../images/crossed_swords_emoji@20x20.png'), auto; }
+.adventure { cursor: url('../images/crossed_swords_emoji@42x42.png'), auto; }
 
-.horror { cursor: url('../images/coffin_emoji@20x20.png'), auto; }
+.horror { cursor: url('../images/coffin_emoji@42x42.png'), auto; }
 /* .horror:hover { color: var(--vamp-red); } */
 
-.stitch { cursor: url('../images/yarn_emoji@20x20.png'), auto; }
+.stitch { cursor: url('../images/yarn_emoji@42x42.png'), auto; }
 
 .fa-asterisk { font-size: 90%; }
 
