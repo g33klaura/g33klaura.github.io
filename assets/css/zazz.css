@@ -13,10 +13,11 @@ h1,
 h2 { font-weight: 300; }
 
 h1 > span { font-weight: 600; }
-h1 > span:hover { color: var(--pop); }
 
 h2 > span { font-weight: 500; }
-h2 > span:hover { color: var(--highlight); }
+
+h1 > span:hover,
+h2 > span:hover { color: var(--pop); }
 
 h1 { font-size: 4rem; }
 
@@ -99,26 +100,53 @@ p span:hover {
 	text-underline-offset: 0.6em;
 }
 
-h1 > span { cursor: url('../images/waving_hand_emoji@42x42.png'), auto; }
+/* h1 > span { cursor: url('../images/waving_hand_emoji@42x42.png'), auto; } */
 
-h2 > span { cursor: url('../images/woman-genie_42x42.png'), auto; }
+h1 > span {
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>👋</text></svg>") 16 0, auto;
+}
 
-.nerd { cursor: url('../images/nerd_face_emoji@42x42.png'), auto; }
+/* h2 > span { cursor: url('../images/woman-genie_42x42.png'), auto; } */
 
-.adventure { cursor: url('../images/crossed_swords_emoji@42x42.png'), auto; }
+h2 > span {
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧞‍♀️</text></svg>") 16 0,
+	auto;
+}
 
-.horror { cursor: url('../images/coffin_emoji@42x42.png'), auto; }
+/* .nerd { cursor: url('../images/nerd_face_emoji@42x42.png'), auto; } */
+
+.nerd {
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🤓</text></svg>") 16 0,
+	auto;
+}
+
+/* .adventure { cursor: url('../images/crossed_swords_emoji@42x42.png'), auto; } */
+
+.adventure {
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>⚔️</text></svg>") 16 0,
+	auto;
+}
+
+/* .horror { cursor: url('../images/coffin_emoji@42x42.png'), auto; } */
+
+.horror {
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>⚰️</text></svg>") 16 0,
+	auto;
+}
 .horror:hover {
 	color: var(--vampy-red);
 	text-decoration-color: var(--vampy-red);
 }
 
-.stitch { cursor: url('../images/yarn_emoji@42x42.png'), auto; }
+/* .stitch { cursor: url('../images/yarn_emoji@42x42.png'), auto; } */
+.stitch {
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧶</text></svg>") 16 0,
+	auto;
+}
 .stitch:hover { text-decoration-style: dashed; }
 
-.fa-asterisk { font-size: 90%; }
-
-sup:hover {
+sup.fa-asterisk { font-size: 2rem; }
+sup.fa-asterisk:hover {
 	color: var(--pizzazz);
 	animation: fa-spin 2s infinite linear;
 }
