@@ -4,7 +4,7 @@
   --vaporwave-violet: #B243E1;
   --purple-pop:       #612AF4;
   --toxic-green:      #BAFF00;
-  --vamp-red:         #E52900;
+  --vampy-red:        #E52900;
 
   --dark:       var(--dark-jungle);
   --light:      var(--lacroix-orchid);
@@ -13,7 +13,8 @@
   --pizzazz:    var(--toxic-green);
 }
 
-/*      Fonts by atipo      */
+/*      Fonts by atipo                     */
+/*      https://www.atipofoundry.com/      */
 @font-face {
   font-family: 'geomanist';
   src: url('../fonts/geomanist-light-webfont.eot');

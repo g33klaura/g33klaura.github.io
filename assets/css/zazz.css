@@ -7,15 +7,15 @@ body {
 	cursor: url('../images/streamline-icon-interface-geometric-circle@26x26.svg'), auto;
 }
 
+
 /*      Type      */
 h1,
 h2 { font-weight: 300; }
 
 h1 > span { font-weight: 600; }
-h2 > span { font-weight: 500; }
-
 h1 > span:hover { color: var(--pop); }
 
+h2 > span { font-weight: 500; }
 h2 > span:hover { color: var(--highlight); }
 
 h1 { font-size: 4rem; }
@@ -25,16 +25,8 @@ h2 {
 	line-height: 3rem;
 }
 
-p {
-	font-size: 1.4rem;
-	margin-right: 6rem;
-	line-height: 2.2em;
-}
 
-p span { font-weight: 500; }
-p span:hover { color: var(--pizzazz); }
-
-/*      CTAs      */
+/*      Links      */
 .contact {
 	display: flex;
 	justify-content: flex-end;
@@ -56,22 +48,26 @@ a:hover {
 	text-underline-offset: -2em;
 }
 
-/* a:hover::before {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-} */
+a + a { margin-left: 12px; }
 
-a+a { margin-left: 12px; }
 
+/*      CTAs      */
+a.work,
 a.talk {
 	font-size: 2rem;
 	font-weight: 500;
 	line-height: 3rem;
 	text-decoration: none;
 	padding: 0;
-	cursor: url('../images/streamline-icon-mail-send-email@26x26.svg');
+	margin-left: 0;
 }
 
+a.work:hover,
 a.talk:hover { color: var(--vaporwave-violet); }
+
+/* not saved yet dummy */
+a.talk { cursor: url('../images/streamline-icon-mail-send-email@26x26.svg'); }
+
 
 /*      Flair      */
 footer {
@@ -86,35 +82,39 @@ footer {
 	left: 0;
 }
 
-p span { letter-spacing: 1.1px; }
+p {
+	font-size: 1.4rem;
+	margin-right: 6rem;
+	line-height: 2.2em;
+}
+
+p span {
+	font-weight: 500;
+	letter-spacing: 1.1px;
+}
 
 p span:hover {
+	color: var(--pizzazz);
 	text-decoration: underline var(--pizzazz) wavy 2px;
 	text-underline-offset: 0.6em;
 }
 
 h1 > span { cursor: url('../images/waving_hand_emoji@42x42.png'), auto; }
 
-h1 > span:hover { position: relative; }
-
-/* Profile bubble */
-h1 > span:hover:after {
-	content: url(../images/its-me-bw@200x200.jpeg);
-	display: block;
-	position: absolute;
-	left: 450px;
-	top: -60px;
-	clip-path: circle(91px at 50% 42%);
-}
+h2 > span { cursor: url('../images/woman-genie_42x42.png'), auto; }
 
 .nerd { cursor: url('../images/nerd_face_emoji@42x42.png'), auto; }
 
 .adventure { cursor: url('../images/crossed_swords_emoji@42x42.png'), auto; }
 
 .horror { cursor: url('../images/coffin_emoji@42x42.png'), auto; }
-/* .horror:hover { color: var(--vamp-red); } */
+.horror:hover {
+	color: var(--vampy-red);
+	text-decoration-color: var(--vampy-red);
+}
 
 .stitch { cursor: url('../images/yarn_emoji@42x42.png'), auto; }
+.stitch:hover { text-decoration-style: dashed; }
 
 .fa-asterisk { font-size: 90%; }
 

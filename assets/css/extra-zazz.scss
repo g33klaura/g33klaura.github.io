@@ -1,9 +1,12 @@
+/*
+* Styles for Background Funfetti✨
+* Thank you @sengokukun
+* https://codepen.io/sengoku/pen/LYVzVjp
+*/
+
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .container {
-  // width: 100%;
-  // height: 100vh;
-  // display: block;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -34,13 +37,16 @@
 }
 
 $circle-size: 100px;
+$shape-count: 40;
+
 $colors:
-  #45ffdc,
-  #ff94a1,
-  #cda1ff,
-  #BAFF00,
-  #4800c0,
-  #9300c9;
+#45FFDC,
+#BAFF00,
+#FF94A1,
+#CDA1FF,
+#4800C0,
+#9300C9;
+
 $shapes:
   '\f111', // fa-circle
   '\f10c', // fa-circle-o
@@ -48,8 +54,6 @@ $shapes:
   '\f068', // fa-minus
   '\f04b', // fa-play (triangle)
   '\f04d'; // fa-stop (square)
-$shape-count: 40;
-
 
 @for $i from 1 through $shape-count {
   $shape-size: 0.7 + random(10);
