@@ -38,35 +38,41 @@
   content: var(--content, '✨');
 }
 
-.wavy   { --content: '👋'; }
-.genie  { --content: '🧞‍♀️'; }
+.wavy       { --content: '👋'; }
+.genie      { --content: '🧞‍♀️'; }
+.adventure  { --content: '⚔️'; }
+// .adventure  { --content: '🧝🏻‍♂️'; }
+// .horror     { --content: '⚰️'; }
+.horror     { --content: '🧛🏻‍♀️'; }
+// .stitch     { --content: '🧶'; }
+.stitch     { --content: '🧵'; }
 
 $circle-size: 100px;
 $shape-count: 40;
 
-$colors:
-#45FFDC,
-#BAFF00,
-#FF94A1,
-#CDA1FF,
-#4800C0,
-#9300C9;
+// $colors:
+// #45FFDC,
+// #BAFF00,
+// #FF94A1,
+// #CDA1FF,
+// #4800C0,
+// #9300C9;
 
-$shapes:
-  '\f111', // fa-circle
-  '\f10c', // fa-circle-o
-  '\f1db', // fa-circle-thin
-  '\f068', // fa-minus
-  '\f04b', // fa-play (triangle)
-  '\f04d'; // fa-stop (square)
+// $shapes:
+//   '\f111', // fa-circle
+//   '\f10c', // fa-circle-o
+//   '\f1db', // fa-circle-thin
+//   '\f068', // fa-minus
+//   '\f04b', // fa-play (triangle)
+//   '\f04d'; // fa-stop (square)
 
 @for $i from 1 through $shape-count {
   $shape-size: 0.7 + random(10);
 
   $rotation: random(360);
   $speed: 40 + random(30);
-  $color-key: random(length($colors));
-  $shape-color: nth($colors, $color-key);
+  // $color-key: random(length($colors));
+  // $shape-color: nth($colors, $color-key);
   // $shape-key: random(length($shapes));
   // $shape-type: nth($shapes, $shape-key);
   $text: random(10);
@@ -86,7 +92,7 @@ $shapes:
 
     .random-shape:after {
       margin: #{$shape-size}rem;
-      color: $shape-color;
+      // color: $shape-color;
       font-size: #{$shape-size * 0.2}rem;
       // content: $shape-type;
     }

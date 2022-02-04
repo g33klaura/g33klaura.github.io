@@ -1,18 +1,3 @@
-:root {
-  --dark-jungle:      #212E31;
-  --lacroix-orchid:   #E7D6E9;
-  --vaporwave-violet: #B243E1;
-  --purple-pop:       #612AF4;
-  --toxic-green:      #BAFF00;
-  --vampy-red:        #E52900;
-
-  --dark:       var(--dark-jungle);
-  --light:      var(--lacroix-orchid);
-  --highlight:  var(--vaporwave-violet);
-  --pop:        var(--purple-pop);
-  --pizzazz:    var(--toxic-green);
-}
-
 /*      Fonts by atipo                     */
 /*      https://www.atipofoundry.com/      */
 @font-face {

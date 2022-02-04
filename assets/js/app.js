@@ -18,41 +18,33 @@ $(document).ready(function () {
 
     var $allShapes = $("[class*='shape-container--']");
 
+    // Add emoji background sprites on hover of certain elements
+    $('.fancy').hover(function () {
+        // Determine which element was hovered
+        let addSprite = $(this).attr('data-sprite');
 
-    // to start, add block for each hoverable text
-    // later put that ish in a sweet function
-    $('.hiya').hover(() => {
-        // Add sprite class
-        $('.random-shape').addClass('wavy');
+        // Add corresponding sprite class
+        $('.random-shape').addClass(addSprite);
 
         // Render shape container
         $('.shape').show();
-    }, () => {
-        // Remove sprite class
-        $('.random-shape').removeClass('wavy');
-
-        // Hide container again
+    }, function () {
+        let removeSprite = $(this).attr('data-sprite');
+        $('.random-shape').removeClass(removeSprite);
         $('.shape').hide();
     });
 
-    $('.poof').hover(() => {
-        $('.random-shape').addClass('genie');
-        $('.shape').show();
-    }, () => {
-        $('.random-shape').removeClass('genie');
-        $('.shape').hide();
-    });
-
-
-    // Lil asterisks animations
-    $('.fa-asterisk').hover(() => {
-        $('.fa-asterisk').css({
-            'animation': 'fa-spin 2s infinite linear',
-            'color': '#BAFF00',
-        });
-    }, () => {
-        $('.fa-asterisk').css('animation', 'none');
-        $('.thing1').css('color', '#212E31');
-        $('.thing2').css('color', '#E7D6E9');
-    });
+    /*
+    * Lil asterisks animations
+    */
+    // $('.fa-asterisk').hover(() => {
+    //     $('.fa-asterisk').css({
+    //         'animation': 'fa-spin 2s infinite linear',
+    //         'color': '#BAFF00',
+    //     });
+    // }, () => {
+    //     $('.fa-asterisk').css('animation', 'none');
+    //     $('.thing1').css('color', '#212E31');
+    //     $('.thing2').css('color', '#E7D6E9');
+    // });
 });
