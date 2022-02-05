@@ -1,10 +1,4 @@
-/*
-* Styles for Background Funfetti✨
-* Thank you @sengokukun
-* https://codepen.io/sengoku/pen/LYVzVjp
-*/
-
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+// @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .container {
   overflow: hidden;
@@ -12,6 +6,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 6rem;
+  flex: 1 0 auto;
 
   .inner-container {
     display: grid;
@@ -22,6 +17,114 @@
   }
 }
 
+/*      Nav links      */
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    position: relative;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 12px 16px;
+    color: var(--dark);
+    cursor: url('../images/streamline-icon-interface-geometric-triangle@26x26.svg'), auto;
+
+    &:hover {
+      text-decoration: underline var(--dark) 0.5em;
+      text-underline-offset: -2em;
+    }
+  }
+
+  a::before {
+    // background: hsl(45 100% 70%);
+    background: var(--snap); //what do i want this to be?...
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .portfolio:hover { text-decoration-color: var(--crackle); }
+  .resume:hover { text-decoration-color: var(--pizzazz); }
+  .linkedin:hover { text-decoration-color: var(--snap); }
+  .email:hover { text-decoration-color: var(--highlight); }
+
+  a + a { margin-left: 12px; }
+}
+
+/*      CTAs      */
+h2 {
+  a {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  text-decoration: none;
+  color: var(--dark);
+  padding: 0;
+  margin-left: 0;
+  cursor: url('../images/streamline-icon-interface-geometric-triangle@26x26.svg'),
+  auto;
+
+  // Handle these for mobile
+  // &:visited {
+  //   color: magenta;
+  // }
+
+  // &:active {
+  //   color: lime;
+  // }
+
+  // &:focus {
+  //   color: coral;
+  // }
+  }
+
+  .work {
+    background: linear-gradient(to bottom,
+        var(--crackle) 0%,
+        var(--crackle) 100%);
+  }
+
+  .talk {
+    background: linear-gradient(to bottom,
+        var(--highlight) 0%,
+        var(--highlight) 100%);
+  }
+
+  .work,
+  .talk {
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    transition: background-size .2s;
+
+    &:hover {
+      background-size: 4px 50px;
+      // color: var(--light);
+    }
+  }
+}
+
+
+
+
+/*
+* Styles for Background Funfetti✨
+* Thank you @sengokukun
+* https://codepen.io/sengoku/pen/LYVzVjp
+*/
 .shape {
   overflow: clip;
   position: absolute;
@@ -98,3 +201,19 @@ $shape-count: 40;
     }
   }
 }
+
+/*
+* Remove duration for all unknown animation when a user
+* requests a reduced animation experience
+* https://css-tricks.com/revisiting-prefers-reduced-motion/
+*/
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+// Let's make this baby responsive
+

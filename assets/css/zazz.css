@@ -2,12 +2,11 @@
 	--dark-jungle: 			#212E31;
 	--lacroix-orchid: 	#E7D6E9;
 	--vaporwave-violet: #B243E1;
-	/* --vaporwave-violet: #9300C9; */
-	--vampy-red: 				#E52900;
-	--snap: 						#FF94A1;
-	--crackle: 					#45FFDC;
 	--pop: 							#612AF4;
+	--crackle: 					#45FFDC;
+	--snap: 						#FF94A1;
 	--pizzazz: 					#BAFF00;
+	--vampy-red: 				#E52900;
 
 	--dark: 			var(--dark-jungle);
 	--light: 			var(--lacroix-orchid);
@@ -16,13 +15,25 @@
 
 html { background-color: var(--light); }
 
+html,
+body { height: 100%; }
+
 body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
 	font-family: 'geomanist', sans-serif;
 	color: var(--dark);
-	margin: 0;
 	cursor: url('../images/streamline-icon-interface-geometric-circle@26x26.svg'), auto;
 }
 
+footer {
+	background-color: var(--dark);
+	color: var(--light);
+	padding: 6rem;
+	padding-top: 1rem;
+	flex-shrink: 0;
+}
 
 /*      Type      */
 h1,
@@ -35,6 +46,32 @@ h2 > span { font-weight: 500; }
 h1 > span:hover,
 h2 > span:hover { color: var(--pop); }
 
+/* let's try it... */
+/* h1 > span {
+	position: relative;
+}
+h1 > span::before {
+	background: var(--highlight);
+	content: "";
+	inset: 0;
+	position: absolute;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s ease-in-out;
+	z-index: -1;
+}
+
+h1 > span:hover::before {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+h1 > span:hover {
+	color: var(--light);
+	transition: color 0.5s ease-in-out;
+} */
+/* ~~~ */
+
 h1 { font-size: 4rem; }
 
 h2 {
@@ -42,71 +79,8 @@ h2 {
 	line-height: 3rem;
 }
 
-
-/*      Links      */
-.contact {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-
-a {
-	text-decoration: none;
-	font-family: inherit;
-	font-weight: 400;
-	font-size: 1.2rem;
-	padding: 12px 16px;
-	color: var(--dark);
-	cursor: url('../images/streamline-icon-interface-geometric-triangle@26x26.svg'), auto;
-}
-
-a:hover {
-	text-decoration: underline var(--dark) 0.5em;
-	text-underline-offset: -2em;
-}
-
-.portfolio:hover 	{ text-decoration-color: var(--crackle); }
-.resume:hover 		{ text-decoration-color: var(--pizzazz); }
-.linkedin:hover 	{ text-decoration-color: var(--snap); }
-.email:hover 			{ text-decoration-color: var(--highlight); }
-
-a + a { margin-left: 12px; }
-
-
-/*      CTAs      */
-a.work,
-a.talk {
-	font-size: 2rem;
-	font-weight: 500;
-	line-height: 3rem;
-	text-decoration: none;
-	padding: 0;
-	margin-left: 0;
-}
-
-a.work:hover,
-a.talk:hover { color: var(--pop); }
-
-/* not saved yet dummy */
-/* a.talk { cursor: url('../images/streamline-icon-mail-send-email@26x26.svg'); } */
-
-
-/*      Flair      */
-footer {
-	background-color: var(--dark);
-	color: var(--light);
-	padding: 6rem;
-	padding-top: 1rem;
-	height: 20vh;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-}
-
 p {
 	font-size: 1.4rem;
-	margin-right: 6rem;
 	line-height: 2.2em;
 }
 
@@ -121,6 +95,7 @@ p span:hover {
 	text-underline-offset: 0.6em;
 }
 
+/*      Flair      */
 h1 > span {
 	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🖖</text></svg>") 16 0,
 	auto;
@@ -130,11 +105,6 @@ h2 > span {
 	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>👩🏻‍🎤</text></svg>") 16 0,
 	auto;
 }
-
-/* .nerd {
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🤓</text></svg>") 16 0,
-	auto;
-} */
 
 .adventure {
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>⚔️</text></svg>") 16 0,
