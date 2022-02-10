@@ -1,11 +1,24 @@
 // @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
+// Need to keep these babbies consistent
+.container,
+footer { padding: 10rem; }
+
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  flex-shrink: 0;
+  padding-top: 1rem;
+  padding-bottom: 4rem; /* match container top */
+}
+
 .container {
   overflow: hidden;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   flex: 1 0 auto;
 
   .inner-container {
@@ -22,6 +35,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 1rem;
 
   a {
     position: relative;
@@ -117,9 +131,6 @@ h2 {
   }
 }
 
-
-
-
 /*
 * Styles for Background Funfetti✨
 * Thank you @sengokukun
@@ -129,8 +140,8 @@ h2 {
   overflow: clip;
   position: absolute;
   top: 0;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   opacity: 0.7;
   z-index: -1;
 }
@@ -214,6 +225,3 @@ $shape-count: 40;
     transition-duration: 0.001ms !important;
   }
 }
-
-// Let's make this baby responsive
-

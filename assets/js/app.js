@@ -34,17 +34,17 @@ $(document).ready(function () {
         $('.shape').hide();
     });
 
-    /*
-    * Lil asterisks animations
-    */
-    // $('.fa-asterisk').hover(() => {
-    //     $('.fa-asterisk').css({
-    //         'animation': 'fa-spin 2s infinite linear',
-    //         'color': '#BAFF00',
+
+    // Trying out mouse-following gradient
+    // $(document).mousemove(function(event) {
+    //     windowWidth = $(window).width();
+    //     windowHeight = $(window).height();
+
+    //     mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+    //     mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+
+    //     $('html').css({
+    //         'background-image': 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #ffd1e7, #fff5ff)',
     //     });
-    // }, () => {
-    //     $('.fa-asterisk').css('animation', 'none');
-    //     $('.thing1').css('color', '#212E31');
-    //     $('.thing2').css('color', '#E7D6E9');
     // });
 });
