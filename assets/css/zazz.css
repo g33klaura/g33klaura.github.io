@@ -6,29 +6,17 @@
 	--crackle: 					#45FFDC;
 	--snap: 						#FF94A1;
 	--pizzazz: 					#BAFF00;
-	--vampy-red: 				#E52900;
+	--vampy: 						#E52900;
 
 	--dark: 			var(--dark-jungle);
 	--light: 			var(--lacroix-orchid);
 	--highlight: 	var(--vaporwave-violet);
 }
 
-html { background-color: var(--light); }
+/* html { background-color: var(--light); } */
 html {
-	/* background-image:
-		radial-gradient(circle, #ffd1e7, #fad2e9, #f5d3ea, #f0d4ea, #ecd5ea, #ecd8eb, #eddbed, #eddeee, #f2e4f2, #f6e9f6, #fbeffb, #fff5ff); */
-
-	background-image: linear-gradient(150deg,
-		hsl(300deg 100% 98%) 0%,
-		hsl(299deg 55% 96%) 18%,
-		hsl(297deg 41% 93%) 30%,
-		hsl(296deg 35% 91%) 40%,
-		hsl(294deg 31% 89%) 48%,
-		hsl(306deg 36% 86%) 55%,
-		hsl(323deg 58% 85%) 62%,
-		hsl(335deg 78% 83%) 70%,
-		hsl(344deg 93% 81%) 79%,
-		hsl(353deg 100% 79%) 100%);
+	background-image: url('../images/riso_capture2.png');
+	background-size: cover;
 	}
 
 html,
@@ -124,8 +112,8 @@ h2 > span {
 	auto;
 }
 .horror:hover {
-	color: var(--vampy-red);
-	text-decoration-color: var(--vampy-red);
+	color: var(--vampy);
+	text-decoration-color: var(--vampy);
 }
 
 .stitch {
