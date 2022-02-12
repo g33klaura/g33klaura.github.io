@@ -1,21 +1,21 @@
 :root {
-	--dark-jungle: 			#212E31;
-	--lacroix-orchid: 	#E7D6E9;
-	--vaporwave-violet: #B243E1;
-	--pop: 							#612AF4;
-	--crackle: 					#45FFDC;
-	--snap: 						#FF94A1;
-	--pizzazz: 					#BAFF00;
-	--vampy: 						#E52900;
+	--dark-jungle: 			#212e31;
+	--lacroix-orchid: 	#e7d6e9;
+	--vaporwave-violet: #b243e1;
+	--pop: 							#612af4;
+	--crackle: 					#45ffdc;
+	--snap: 						#ff94a1;
+	--pizzazz: 					#baff00;
+	/* --vampy: 						#e52900; */
 
 	--dark: 			var(--dark-jungle);
 	--light: 			var(--lacroix-orchid);
 	--highlight: 	var(--vaporwave-violet);
 }
 
-/* html { background-color: var(--light); } */
+html { background-color: var(--light); }
 html {
-	background-image: url('../images/riso_capture2.png');
+	background: url('../images/riso_capture_flip.png') no-repeat;
 	background-size: cover;
 	}
 
@@ -28,7 +28,9 @@ body {
 	margin: 0;
 	font-family: 'geomanist', sans-serif;
 	color: var(--dark);
-	cursor: url('../images/streamline-icon-interface-geometric-circle@26x26.svg'), auto;
+	/* cursor: url('../images/streamline-icon-interface-geometric-circle@26x26.svg'), auto; */
+	cursor: url('../images/streamline-icon-interface-cursor-arrow-1@26x26.svg'), auto;
+	/* cursor: url('../images/streamline-icon-interface-geometric-triangle@26x26.svg'), auto; */
 }
 
 /*      Type      */
@@ -78,6 +80,7 @@ h2 {
 p {
 	font-size: 1.4rem;
 	line-height: 2.2em;
+	margin-top: 10rem;
 }
 
 p span {
@@ -107,14 +110,14 @@ h2 > span {
 	auto;
 }
 
-.horror {
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧛🏻‍♀️</text></svg>") 16 0,
+.scifi {
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🛸</text></svg>") 16 0,
 	auto;
 }
-.horror:hover {
+/* .scifi:hover {
 	color: var(--vampy);
 	text-decoration-color: var(--vampy);
-}
+} */
 
 .stitch {
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧵</text></svg>") 16 0,
