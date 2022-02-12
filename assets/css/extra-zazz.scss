@@ -9,7 +9,7 @@ footer {
   color: var(--light);
   flex-shrink: 0;
   padding-top: 1rem;
-  padding-bottom: 4rem; /* match container top */
+  padding-bottom: 4rem; // match container top
 }
 
 .container {
@@ -43,50 +43,20 @@ footer {
     font-family: inherit;
     font-weight: 400;
     font-size: 1.2rem;
-    // padding: 12px 16px;
-    // padding: 6px 10px;
-    padding: 10px 0;
+    padding: 10px 0; // tightens "button" size
     color: var(--dark);
-    // cursor: url('../images/streamline-icon-interface-geometric-triangle@26x26.svg'), auto;
-    cursor: pointer, auto;
+    cursor: url('../images/flex-streamline-icon-interface-cursor-hand@26x26.svg'), auto;
   }
 
-  .portfolio {
-    background: linear-gradient(to bottom, var(--crackle) 0%, var(--crackle) 100%);
-    background-position: 100% 0;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-    text-decoration: none;
-    transition: background-size .2s;
+  .portfolio { background: linear-gradient(to bottom, var(--crackle) 0%, var(--crackle) 100%); }
+  .resume { background: linear-gradient(to bottom, var(--pizzazz) 0%, var(--pizzazz) 100%); }
+  .linkedin { background: linear-gradient(to bottom, var(--snap) 0%, var(--snap) 100%); }
+  .email { background: linear-gradient(to bottom, var(--highlight) 0%, var(--highlight) 100%); }
 
-    &:hover { background-size: 4px 50px; }
-  }
-
-  .resume {
-    background: linear-gradient(to bottom, var(--pizzazz) 0%, var(--pizzazz) 100%);
-    background-position: 100% 0;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-    text-decoration: none;
-    transition: background-size .2s;
-
-    &:hover { background-size: 4px 50px; }
-  }
-
-
-  .linkedin {
-    background: linear-gradient(to bottom, var(--snap) 0%, var(--snap) 100%);
-    background-position: 100% 0;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-    text-decoration: none;
-    transition: background-size .2s;
-
-    &:hover { background-size: 4px 50px; }
-  }
-
+  .portfolio,
+  .resume,
+  .linkedin,
   .email {
-    background: linear-gradient(to bottom, var(--highlight) 0%, var(--highlight) 100%);
     background-position: 100% 0;
     background-repeat: repeat-x;
     background-size: 4px 4px;
