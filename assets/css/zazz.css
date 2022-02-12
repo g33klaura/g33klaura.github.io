@@ -6,7 +6,6 @@
 	--crackle: 					#45ffdc;
 	--snap: 						#ff94a1;
 	--pizzazz: 					#baff00;
-	/* --vampy: 						#e52900; */
 
 	--dark: 			var(--dark-jungle);
 	--light: 			var(--lacroix-orchid);
@@ -80,7 +79,7 @@ h2 {
 p {
 	font-size: 1.4rem;
 	line-height: 2.2em;
-	margin-top: 10rem;
+	margin-top: 8rem;
 }
 
 p span {
@@ -96,31 +95,35 @@ p span:hover {
 
 /*      Flair      */
 h1 > span {
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🖖</text></svg>") 16 0,
-	auto;
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🖖</text></svg>") 16 0, auto;
 }
 
 h2 > span {
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>👩🏻‍🎤</text></svg>") 16 0,
-	auto;
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>👩🏻‍🎤</text></svg>") 16 0, auto;
 }
 
 .adventure {
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>⚔️</text></svg>") 16 0,
-	auto;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>⚔️</text></svg>") 16 0, auto;
 }
 
 .scifi {
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🛸</text></svg>") 16 0,
-	auto;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🛸</text></svg>") 16 0, auto;
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	font-size: 1.5rem;
 }
-/* .scifi:hover {
-	color: var(--vampy);
-	text-decoration-color: var(--vampy);
-} */
+
+.scifi:hover {
+	text-decoration-style: dotted;
+	text-decoration-thickness: 5px;
+}
 
 .stitch {
-	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧵</text></svg>") 16 0,
-	auto;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧵</text></svg>") 16 0, auto;
 }
-.stitch:hover { text-decoration-style: dashed; }
+
+.stitch:hover {
+	text-decoration-style: dashed;
+	text-decoration-thickness: 4px;
+	text-underline-offset: 0.7em;
+}
