@@ -38,34 +38,11 @@ h1 > span { font-weight: 600; }
 
 h2 > span { font-weight: 500; }
 
+h1 > span,
+h2 > span { transition: color 0.2s ease-in-out; }
+
 h1 > span:hover,
 h2 > span:hover { color: var(--pop); }
-
-/* let's try it... */
-/* h1 > span {
-	position: relative;
-}
-h1 > span::before {
-	background: var(--highlight);
-	content: "";
-	inset: 0;
-	position: absolute;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform 0.5s ease-in-out;
-	z-index: -1;
-}
-
-h1 > span:hover::before {
-	transform: scaleX(1);
-	transform-origin: left;
-}
-
-h1 > span:hover {
-	color: var(--light);
-	transition: color 0.5s ease-in-out;
-} */
-/* ~~~ */
 
 h1 { font-size: 5rem; }
 
