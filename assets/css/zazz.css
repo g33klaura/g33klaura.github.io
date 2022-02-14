@@ -12,11 +12,14 @@
 	--highlight: 	var(--vaporwave-violet);
 }
 
-html { background-color: var(--light); }
+html { background-color: var(--light); } /* fallback */
 html {
-	background: url('../images/riso_capture_flip.png') no-repeat;
+	background: url('../images/riso_capture_flip.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	}
+}
 
 html,
 body { height: 100%; }
