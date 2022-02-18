@@ -1,5 +1,5 @@
 :root {
-	--dark-jungle: 			#212e31;
+	--night-forest: 		#212e31;
 	--lacroix-orchid: 	#e7d6e9;
 	--vaporwave-violet: #b243e1;
 	--pop: 							#612af4;
@@ -7,7 +7,7 @@
 	--snap: 						#ff94a1;
 	--pizzazz: 					#baff00;
 
-	--dark: 			var(--dark-jungle);
+	--dark: 			var(--night-forest);
 	--light: 			var(--lacroix-orchid);
 	--highlight: 	var(--vaporwave-violet);
 }

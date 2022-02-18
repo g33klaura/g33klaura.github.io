@@ -1,24 +1,13 @@
 // @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-// Need to keep these babbies consistent
-.container,
-footer { padding: 10rem; }
-
-footer {
-  background-color: var(--dark);
-  color: var(--light);
-  flex-shrink: 0;
-  padding-top: 1rem;
-  padding-bottom: 4rem; // match container top
-}
-
 .container {
   overflow: hidden;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding: 4rem 10rem 2rem;
+  // padding-top: 4rem;
+  // padding-bottom: 2rem;
   flex: 1 0 auto;
 
   .inner-container {
@@ -210,5 +199,57 @@ $shape-count: 40;
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+}
+
+/*      Media queries 🧟‍♀️      */
+/*
+* iPad 1, 2, Mini and Air
+* Portrait and Landscape
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container { padding: 0 6rem; }
+
+  .contact {
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  h1 { font-size: 3.6rem; }
+
+  h2,
+  h2 a {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding-top: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+/*
+* iPhone 6, 6S, 7 and 8
+* Portrait and Landscape
+*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container { padding: 2.2rem; }
+
+  // needs burger menu
+
+  h1 { font-size: 2rem; }
+
+  h2,
+  h2 a {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding-top: 4rem;
+    margin-bottom: 0;
   }
 }
