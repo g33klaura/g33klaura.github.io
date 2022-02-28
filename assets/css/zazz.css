@@ -84,13 +84,13 @@ h2 > span {
 
 .adventure {
 	/* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>⚔️</text></svg>") 16 0, auto; */
-	cursor: url(https://emojis.slackmojis.com/emojis/images/1643514183/1484/link-success.png?1643514183), auto;
+	cursor: url(https://emojis.slackmojis.com/emojis/images/1643514183/1484/link-success.png), auto;
 }
 
 .scifi {
 	/* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🛸</text></svg>") 16 0, auto; */
 	/* cursor: url(https://emojis.slackmojis.com/emojis/images/1643514041/3/aliensguy.jpg?1643514041), auto; */
-	cursor: url(https://emojis.slackmojis.com/emojis/images/1643517031/30825/bender-neat.gif?1643517031), auto;
+	cursor: url(https://emojis.slackmojis.com/emojis/images/1643517031/30825/bender-neat.gif), auto;
 	font-family: 'Share Tech Mono', monospace;
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -103,9 +103,8 @@ h2 > span {
 
 .stitch {
 	/* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧵</text></svg>") 16 0, auto; */
-	cursor: url(https://emojis.slackmojis.com/emojis/images/1643514958/9842/meow_knit.png?1643514958), auto;
-	cursor: url(https://emojis.slackmojis.com/emojis/images/1643515205/12225/all_the_things.png?1643515205), auto;
-	/* cursor: url(https://emojis.slackmojis.com/emojis/images/1643513053/50872/colorful-sparkles.gif?1643513053), auto; */
+	/* cursor: url(https://emojis.slackmojis.com/emojis/images/1643514958/9842/meow_knit.png), auto; */
+	cursor: url(https://emojis.slackmojis.com/emojis/images/1643515205/12225/all_the_things.png), auto;
 }
 
 .stitch:hover {
