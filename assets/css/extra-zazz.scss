@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 4rem 10rem 2rem;
+  padding: 0 10rem;
   // padding-top: 4rem;
   // padding-bottom: 2rem;
   flex: 1 0 auto;
@@ -13,7 +13,7 @@
   .inner-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr auto;
+    grid-template-rows: 0.2fr 1fr auto;
     width: 100%;
     margin: 0 auto;
   }

@@ -54,32 +54,42 @@ h2 {
 	line-height: 3rem;
 }
 
-p {
-	font-size: 1.4rem;
-	line-height: 2.2em;
-	/* margin-top: 8rem; */
-	padding-top: 6rem;
-}
-
-p span {
-	font-weight: 500;
+/*      Flair      */
+.adventure,
+.scifi,
+.stitch {
+	font-weight: 400;
 	letter-spacing: 1.1px;
 }
 
-p span:hover {
-	color: var(--pizzazz);
-	text-decoration: underline var(--pizzazz) wavy 2px;
+.adventure:hover,
+.scifi:hover,
+.stitch:hover {
 	text-underline-offset: 0.6em;
+	filter: hue-rotate(42deg);
 }
 
-/*      Flair      */
+.adventure:hover {
+	color: #cda1ff;
+	text-decoration: underline #cda1ff wavy 2px;
+}
+
+.scifi:hover {
+	color: var(--pizzazz);
+	text-decoration: underline var(--pizzazz) dotted 5px;
+}
+
+.stitch:hover {
+	color: var(--snap);
+	text-decoration: underline var(--snap) dashed 4px;
+}
+
 h1 > span {
 	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🖖</text></svg>") 16 0, auto;
 }
 
-h2 > span {
-	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧞‍♀️</text></svg>") 16 0,
-	auto;
+.poof {
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧞‍♀️</text></svg>") 16 0, auto;
 }
 
 .adventure {
@@ -93,22 +103,11 @@ h2 > span {
 	cursor: url(https://emojis.slackmojis.com/emojis/images/1643517031/30825/bender-neat.gif), auto;
 	font-family: 'Share Tech Mono', monospace;
 	font-weight: bold;
-	font-size: 1.5rem;
-}
-
-.scifi:hover {
-	text-decoration-style: dotted;
-	text-decoration-thickness: 5px;
+	font-size: 2.2rem;
 }
 
 .stitch {
 	/* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='42' height='50' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🧵</text></svg>") 16 0, auto; */
-	/* cursor: url(https://emojis.slackmojis.com/emojis/images/1643514958/9842/meow_knit.png), auto; */
-	cursor: url(https://emojis.slackmojis.com/emojis/images/1643515205/12225/all_the_things.png), auto;
-}
-
-.stitch:hover {
-	text-decoration-style: dashed;
-	text-decoration-thickness: 4px;
-	text-underline-offset: 0.7em;
+	/* cursor: url(https://emojis.slackmojis.com/emojis/images/1643514382/3562/yay.png), auto; */
+	cursor: url(https://emojis.slackmojis.com/emojis/images/1643514265/2343/iheartit.png), auto;
 }
